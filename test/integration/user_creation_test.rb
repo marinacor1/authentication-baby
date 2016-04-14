@@ -2,7 +2,6 @@ require 'test_helper'
 require 'capybara/rails'
 
 class UserCreationTest < ActionDispatch::IntegrationTest
-  include Capybara::DSL
   test "user can be creaeted" do
     visit new_user_path
     fill_in "Username", with: "marina"

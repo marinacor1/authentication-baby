@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class UserLoginTest < ActionDispatch::IntegrationTest
-  include Capybara::DSL
   test "registered user can login" do
     user = User.create(username: 'marina', password: 'password')
 
