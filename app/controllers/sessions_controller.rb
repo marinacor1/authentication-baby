@@ -10,4 +10,5 @@ class SessionsController < ApplicationController
     else
     end
   end
+
 end

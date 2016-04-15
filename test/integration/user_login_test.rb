@@ -6,7 +6,7 @@ class UserLoginTest < ActionDispatch::IntegrationTest
 
     visit login_path
     fill_in "Username", with: "marina"
-    fill_in "Password", with: "marina1"
+    fill_in "Password", with: "password"
     click_button "Login"
 
     assert page.has_content?("Welcome, marina")
